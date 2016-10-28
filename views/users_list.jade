@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1= title
+    #users
+        - each user in users
+          div.user
+            div.name= user.name 
+            div.login= user.login
+                form( method="post", action="/user/" + user.user_id + "/delete") 
+                    input(id="delete", value="X", type="submit")
+                form( method="get", action="/user/" + user.user_id + "/edit") 
+                    input(id="edit", value="Edit", type="submit")
+        a(href="/user/new")!= "Add New User"

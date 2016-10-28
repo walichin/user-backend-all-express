@@ -1,0 +1,25 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "better-js-class": "*",
+    "cps": "*",
+    "dotenv": "^2.0.0",
+    "express": "4.13.4",
+    "jade": "*",
+    "mongodb": ">= 0.9.6-7",
+    "mysql": "*",
+    "stylus": "*",
+    "underscore": "*",
+    "node-mysql": "*",
+    "express-error-handler": "*",
+    "serve-favicon": "*",
+    "morgan": "*",
+    "body-parser": "*",
+    "method-override": "*"
+  }
+}

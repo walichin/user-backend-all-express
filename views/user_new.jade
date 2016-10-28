@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    h1= title
+    div.newuser
+        form( method="post")
+            div
+                div
+                    span.label Name :
+                    input(type="text", name="name", id="name")
+                    br
+                    br
+                div
+                    span.label Username :
+                    input(type="text", name="login", id="login")
+                    br
+                    br
+                div
+                    span.label Password :
+                    input(type="text", name="password", id="password")
+                    br
+                    br
+                div#editUserSubmit
+                    input(type="submit", value="Save")
+        a(href="/users_list")!= "Back to Users List"
